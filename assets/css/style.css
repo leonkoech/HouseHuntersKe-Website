@@ -169,11 +169,13 @@ html,body{
     margin-top: 10px;
   
 }
+
 .header-bar .btn{
-    border-radius: 5px;
+  border-radius: 0px;
     outline: none;
     border:0;
 }
+
 .top-banner{
     background-image: url('../dummyimages/banner.jpg');
     background-position:center;
@@ -205,7 +207,6 @@ html,body{
     color:white;
     width:auto;
     height:40px;
-    border-radius: 5px;
     outline: none;
     border:0;
 }
