@@ -1,0 +1,563 @@
+html,body{
+    margin:0;
+    padding: 0;
+}
+/* action-bar container */
+.action-bar {
+    overflow: hidden;
+    text-align: right;
+    background-color: black;
+    /* position: fixed; */
+    top:0;
+    width:100%;
+    padding-right: 4%;
+    margin-left: auto;
+    height:30px;
+    font-family: Arial;
+  }
+  
+  /* Links inside the action-bar */
+  .action-bar a{
+    float: right;
+    line-height: 30px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  .action-bar a img{
+      height:16px;
+      width:16px;
+      margin-top: 7px;
+      filter:invert(100%);
+  }
+  .action-bar a img:hover{
+    cursor:pointer;
+  }
+  .action-bar a:hover{
+      text-decoration: none;
+  }
+  
+  /* The dd container */
+  .dd {
+    float: right;
+    overflow: hidden;
+  }
+ 
+  /* dd button */
+  .dd .dropbtn {
+    font-size: 13px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+ 
+  /* Add a red background color to action-bar links on hover */
+   .dd:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* dd content (hidden by default) */
+  .dd-content {
+    display: none;
+    /* position: fixed; */
+    position: absolute;
+    background-color: black;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .bb{
+    position:absolute
+  }
+  /* Links inside the dd */
+  .dd-content a {
+    float: none;
+    color: white;
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom:3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dd links on hover */
+  .dd-content a:hover {
+    background-color: rgb(54, 54, 54);
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Show the dd menu on hover */
+  .dd:hover .dd-content {
+    display: block;
+  }
+  .header-bar{
+  /* position: fixed; */
+  background-color: white;
+    font-family: Arial;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 10px;
+      display: grid;
+      width:100%;
+      grid-template-columns: 20% 9% 9% 9% 9% auto auto;
+      column-gap: 1%;
+      padding-left: 4%;
+      padding-right: 4%;
+      height:auto;
+  }
+.header-bar img{
+  width:auto;
+  height:60px
+}
+.hbg .dropbtn{
+  color:rgb(139, 139, 139);
+  margin-top: 15px;
+  text-align: center;
+  padding: 0px;
+  width:100%;
+  
+}
+.hbg:hover .dropbtn{
+  background-color: white;
+
+}
+.hbg .dd-content{
+   position: absolute;
+   z-index: 1;
+    width:160px;
+    text-align: center;
+}
+.hb .dropbtn{
+    color:rgb(255, 30, 30);
+        margin-top: 15px;
+    text-align: center;
+    padding: 0px;
+    width:100%;
+    
+  }
+  .hb:hover .dropbtn{
+    background-color: white;
+  
+  }
+  .hb .dd-content{
+     position: absolute;
+     z-index: 1;
+      width:160px;
+      text-align: center;
+  }
+.header-bar button{
+    background-color: rgb(255, 30, 30);
+    color:white;
+    width:100%;
+    height:40px;
+    margin-top: 10px;
+  
+}
+.header-bar .btn{
+    border-radius: 5px;
+    outline: none;
+    border:0;
+}
+.top-banner{
+    background-image: url('../dummyimages/banner.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    margin-top: 10px;
+    height:auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.top-banner h1{
+    margin-left: 4%;
+    color:white;
+    font-weight: bold;
+}
+.cont-top-banner{
+    display: grid;
+    margin-top: 40px;
+    grid-template-rows: 60px 60px;
+    width: 92%;
+    padding: 20px;
+    margin-left: 4%;
+    background-color: #000008;
+    border-radius: 5px;
+}
+.cont-top-banner button{
+    background-color: rgb(255, 30, 30);
+    color:white;
+    width:auto;
+    height:40px;
+    border-radius: 5px;
+    outline: none;
+    border:0;
+}
+.top-cont-top-banner{
+    display: grid;
+    grid-template-columns: 20% auto;
+    column-gap:10px;
+}
+.top-cont-top-banner select{
+    background-color: white;
+    color:black;
+    height:40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.top-cont-top-banner input{
+    background-color: white;
+    outline:none;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: white;
+    color:black;
+    border:0;
+    height:40px
+
+}
+.bottom-cont-top-banner{
+    display: grid;
+    grid-template-columns: 20% auto auto auto auto;
+    column-gap:10px;
+}
+.bottom-cont-top-banner select{
+    color:white;
+    height:40px;
+    border:1px solid white;
+    background-color: #000008;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.bottom-cont-top-banner input{
+    background-color: white;
+    outline:none;
+    padding-left: 8px;
+    padding-right: 8px;
+    outline: none;
+    border:0;
+    background-color: rgb(41, 41, 41);
+    color:white;
+    height:40px
+
+}
+.main-content{
+    width:92%;
+    margin-left: 4%;
+    margin-top: 30px;
+}
+.nav-main-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    height:50px;
+}
+.nav-main-content h2{
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    padding:0;
+    line-height: 50px;
+    color:rgb(255, 30, 30);
+}
+.nav-main-content div{
+    width:inherit;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.nav-main-content div button{
+   padding-left: 20px;
+        background-color: white;
+   padding-right: 20px;
+   border:1px solid black;
+   color: black;
+
+    height: 50px;
+    line-height: 50px;
+   
+}
+.nav-main-content div button:hover{
+    cursor: pointer;
+}
+.properties-main-content{
+    margin-top: 20px;
+    display: grid;
+    width:100%;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    column-gap: 2%;
+}
+.property-mc{
+    width:inherit;
+    height:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.property-mc:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+
+}
+.image-property-mc{
+    width:inherit;
+    height:200px;
+    margin-bottom: 20px;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.property-mc h3{
+ font-weight: bold;
+ margin-left: 4%;
+}
+.property-mc p{
+color:grey;
+margin-left: 4%;
+}
+.property-mc strong{
+font-size: 21px;
+color:rgb(255, 30, 30);
+font-weight: bold;
+margin-left: 4%;
+}
+
+
+.bbbody-footer{
+    height:auto;
+    margin-top: 40px;
+    /* padding-top:6%; */
+    /* padding-bottom:2%; */
+    background: #000008;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+    color:white;
+    
+  }
+  .top-footer{
+  display: grid;
+  grid-template-columns: 30% auto auto auto auto;
+  padding: 30px;
+  column-gap: 20px;
+  }
+  .webdetails{
+    text-align: left;
+    padding-top: 30px;
+    
+  }
+  .centerweb{
+    padding-left: 0px;
+  }
+  .footer-tou{
+    text-decoration: underline;
+  }
+  .footer-tou:hover{
+    cursor: pointer;
+    color:#6095ff;
+  }
+  .centerweb p:hover{
+    cursor: pointer;
+    color:#6095ff;
+  }
+  .webdetails h1{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    
+    margin: 0;
+  }
+  .footer-subtn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 10px;
+    height:35px;
+    margin-top:50%;
+    text-transform: uppercase;
+    background-color: transparent;
+  
+  
+  }
+  .footer-sibtn{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: black;
+    font-size: 10px;
+    margin-top: 10px;
+    height:35px;
+    text-transform: uppercase;
+    background-color: white;
+  }
+  .footer-socials-icons a{
+    text-decoration: none;
+    color:white;
+  
+  }
+  .webdetails p{
+    font-size: 14px;
+    margin: 0;
+    color: #acacac;
+  text-transform: none;
+  word-wrap: none;
+  }
+  .subcription-form{
+    padding: 0;
+    width:100%
+  }
+  .subcription-form label{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .subcription-form input{
+    margin:0;
+    height:35px;
+    border-radius: 0px;
+    width: 100%;
+    font-size: 10px;
+    border: none;
+  }
+  .subcription-form button{
+    background-color: transparent;
+    border: 1px solid #e4e4e4;
+    color: white;
+    font-size: 10px;
+    height:35px;
+    text-transform: uppercase;
+  
+  }
+  .footer-socials-icons{
+    width:100%;
+    display: grid;
+    grid-template-columns: 35px 35px 35px 35px;
+    column-gap: 10%;
+    height:35px;
+  }
+  .footer-socials-icons a{
+    text-decoration: none;
+    width:inherit;
+    text-align: center;
+    height: 35px;
+  }
+  .footer-socials-icons a img{
+    height:35px;
+    width:35px;
+    filter: invert(100%);
+  }
+  .bbbody-footer div{
+    font-size:20px;
+  }
+  .bbbody-footer div ul{
+    list-style: none;
+    padding: 0px;
+  }
+  .bbbody-footer div ul li{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  .bbbody-footer div ul li:hover{
+    color:#5383d3;
+    cursor: pointer;
+  }
+  .bottom-footer{
+    width:100%;
+    height:55px;
+    margin-bottom: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-top:1px solid rgba(248, 248, 248, 0.3);
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  .bottom-footer-left{
+  text-align: left;
+  line-height: 50px;
+  
+  }
+  .bottom-footer-left a{
+    color:rgba(248, 248, 248, 0.3);
+    text-transform: uppercase;
+    font-size: 9px;
+    margin: 0px;
+  }
+  .bottom-footer-right{
+    text-align: right;
+    display: grid;
+    width:auto;
+    height:50px;  
+    grid-template-columns: auto auto;
+  }
+  
+  .bottom-footer-right div{
+  display: grid;
+  width:auto;
+  grid-template-columns:auto 10px;
+  }
+  .ftr{
+    background-color: transparent;
+    margin:0;
+    position: absolute;
+    right: 4%;
+    line-height: 50px;
+  }
+  .ftr:hover{
+      cursor: pointer;
+  }
+  .ftr img{
+    margin-left: 10px;
+    margin-top: 17.5px;
+    transform: rotate(90deg);
+    filter: invert(100%);
+  }
+  .ftrl{
+    line-height: 50px;
+    
+  }
+  .ftr span{
+    color:white;
+    text-transform: uppercase;
+    font-size: 10px;
+    }
+  .bottom-footer-right div img{
+    height:10px;
+  width:auto;
+  color:rgba(248, 248, 248, 0.3);
+    text-transform: uppercase;
+    font-size: 9px;
+  }
+  .he p:hover{
+    cursor: pointer;
+    color:white;
+  }
